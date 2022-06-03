@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="成绩项目">
+  <test name="标准">
+    <classes>
+      <class name="chengcai.testngtest.HomeWork02Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

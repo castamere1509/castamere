@@ -1,0 +1,20 @@
+   Log4j:
+   
+   做什么用的：记录日志，本保存到本地磁盘，方便后续查阅
+   使用步骤：
+   导入jar包后即可使用
+   代码：
+   1.读取配置文件
+   2.创建记录器对象
+   3.选择记录日志等级
+   
+   
+   log4j封装：
+   
+   
+   
+   乱码处理方式，在配置文件中加入
+   
+   log4j.appender.A1=org.apache.log4j.RollingFileAppender
+log4j.appender.A1.Encoding=UTF-8
+log4j.appender.A1.File=all.log

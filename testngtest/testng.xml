@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="网页注册登录">
+  <test name="注册">
+    <classes>
+      <class name="chengcai.testngtest.HomeWork02Test"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="登录">
+    <classes>
+      <class name="chengcai.testngtest.HomeWork03Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

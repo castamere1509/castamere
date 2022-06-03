@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="注册页面">
+  <test name="注册">
+    <classes>
+      <class name="org.chengcai.day02.RegistPost10Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

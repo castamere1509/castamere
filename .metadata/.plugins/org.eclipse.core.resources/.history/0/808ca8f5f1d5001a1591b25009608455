@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>   <!-- 当前版本 -->
+
+  <groupId>chengcai</groupId>  <!-- 公司名称 -->
+  <artifactId>javaadvanced</artifactId>  <!-- 项目名称 -->
+  <version>0.0.1-SNAPSHOT</version>  <!-- 当前项目的版本 -->
+  <packaging>jar</packaging>  <!-- 项目的最终打包方式 -->
+
+  <name>javaadvanced</name> <!-- 自定义的项目名称(项目别名) -->
+  <url>http://maven.apache.org</url> <!-- 项目最终发布的url地址 -->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><!-- 规定项目的编码方式 -->
+  </properties>
+
+  <dependencies><!-- 项目需要依赖的所有jar包 -->
+
+<!-- tsetng jar包的依赖，是一种测试框架 --> 
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.9.10</version>
+    <scope>test</scope>
+</dependency>
+
+
+  </dependencies>
+</project>

@@ -1,0 +1,181 @@
+1.什么是maven:是一种项目构建方式，让我们的开发更加简单，高效
+
+2.maven的特征：
+       1.有不同的结构包，可以按照不同的结构存放代码
+       2.能够自动管理jar
+3.什么是jar包
+           简单来说jar包就是把一些特定功能的类打成一个jar包，我们在项目中可以引用该jar包，引用jar后，我们的项目就能使用这个jar包提供的功能类，
+           比如连接数据库功能，我们可以在项目中引用相关的jar包，然后我们的项目就能够使用连接数据库的功能
+4.maven怎么导入jar包?
+    创建好maven项目，并且配置好pom.xml文件本地仓库的路径后，Maven工程首先会从本地仓库中获取jar包，当无法获取指定jar包时，本地仓库会
+    从远程仓库(中央仓库)中下载jar包，并放入本地仓库以备将来使用。
+    
+5.maven怎么安装
+环境配置：
+ 1.安装jdk
+ 2.下载并且解压maven文件
+ 3.配置环境：配置MAVEN_HOME(maven的安装路径)
+                           配置path(;%MAVEN_HOME%\bin)
+   检查：在cmd窗口输入 mavn -v 查看是否配置成功
+   
+仓库配置：
+       1.新建文件D:\Tools\localRepository  （这个地方就是本地仓库，用来存放  jar包） 
+    2.在maven的配置文件  在D:\Tools\apache-maven-3.3.3\conf 下的 settings.xml文件中声明本地仓库路径
+    3.初始化仓库：在cmd窗口输入入命令  mvn help:system  (为本地仓库下载基础jar包   12个)
+    
+6.为eclipse配置maven
+    1.更改JDK版本（公司有需要才改）
+    2.window –>properties选择maven 点击installations配置maven的home
+    3.maven下 usersettings设置maven配置文件settings.xml的目录
+
+
+7.新建maven项目：
+   1.选择new--other  —>搜索框中填写maven，选择maven project点击next(下一步)按钮
+   2.选择自己创建的workspace目录后，选择点击确定，点击next    (如果选择的不是本工作控件，需要重新配置以上流程)
+   3.选择模版，一般是默认的  点击next
+   4.填写公司名和项目名  点击完成     
+  
+8.更改settings文件中的默认配置
+   1.改maven运行时使用的jdk版本
+    
+    <profile>
+    <id>jdk-1.8</id>
+    <activation>
+        <activeByDefault>true</activeByDefault>
+        <jdk>1.8</jdk>
+    </activation>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+    </properties>
+</profile>
+       
+   2.更改下载路径    
+     <mirror>
+	      <id>alimaven</id>
+	      <mirrorOf>central</mirrorOf>
+	      <name>aliyun maven</name>
+	      <url>http://maven.aliyun.com/nexus/content/groups/public/ </url>
+	     </mirror>
+       
+    
+9.认识pom文件
+ 
+ 
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>  <!-- 当前版本 -->
+
+  <groupId>chengcai</groupId>   <!--公司名称 -->
+  <artifactId>javaadvanced</artifactId>  <!-- 项目名称 -->
+  <version>0.0.1-SNAPSHOT</version>   <!-- 当前项目的版本 -->
+  <packaging>jar</packaging>  <!-- 项目的最终打包方式 -->
+
+  <name>javaadvanced</name>  <!-- 自定义的项目名称(项目别名) -->
+  <url>http://maven.apache.org</url> <!-- 项目最终发布的url地址 -->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding><!-- 规定项目的编码方式 utf-8 -->
+  </properties>
+
+  <dependencies>  <!-- 项目需要依赖的所有 jar包  -->
+		<!-- tesng jar包，是一种测试框架 -->
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>6.9.10</version>
+		</dependency>     
+		 
+		 		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.6</version>
+		</dependency>
+		 
+		<!-- https://mvnrepository.com/artifact/ojdbc/ojdbc -->
+		<dependency>
+		    <groupId>ojdbc</groupId>
+		    <artifactId>ojdbc</artifactId>
+		    <version>14</version>
+		</dependency>
+		 
+		   
+		<!--依赖 maven-surefire插件进行 运行测试案例管理 -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.12.4</version>
+		</dependency>
+
+		<!--依赖 org.uncommons进行美化结果报告 -->
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.4</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!--依赖 com.google.inject进行美化结果报告 -->
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+		</dependency>
+		
+     <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+       <dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+        </dependency>
+
+		
+	
+  </dependencies>
+  
+  
+  <build>   <!--构建项目 -->
+		<resources>
+				<resource>
+					<directory>test-case</directory>
+				</resource>
+		</resources>
+		<plugins>   <!-- 给出构建过程中所用到的插件。 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<!--此处maven-surefire-plugin表示构建和运行项目时需要用到该插件 -->
+				<version>2.12.4</version>
+				<configuration> <!-- maven-surefire-plugin具体的配置 -->
+					<suiteXmlFiles>  <!-- 该标签中声明 运行 哪些测试套件 -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>testng2.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<properties>
+   
+						<property>
+							<name>usedefaultlisteners</name>  <!--关闭默认的testng结果报告 -->
+							<value>false</value>
+						</property>
+
+						<!-- 使用reportng的结果报告，并且生成的格式为HTMLReporter和JUnitXMLReporter两种 -->
+						<property>
+							<name>listener</name>
+							<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value>
+						</property>
+					</properties>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
+</project>     
+    
+            

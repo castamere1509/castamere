@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="淘宝项目">
+  <test name="注册">
+    <classes>
+      <class name="com.chengcai.day01.IfDemo01Test"/>
+      <class name="com.chengcai.day01.HomeWork02Test"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="登录">
+    <classes>
+      <class name="com.chengcai.day01.DataProvider02Test"/>
+      <class name="com.chengcai.day01.DataProvider03Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

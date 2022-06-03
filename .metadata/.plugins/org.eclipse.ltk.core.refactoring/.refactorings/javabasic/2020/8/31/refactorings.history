@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Exception06.java&apos; to &apos;javabasic/src/org.chengcai.day12List&apos;&#x0D;&#x0A;- Original project: &apos;javabasic&apos;&#x0D;&#x0A;- Destination element: &apos;javabasic/src/org.chengcai.day12List&apos;&#x0D;&#x0A;- Original element: &apos;org.chengcai.day12List.Exception06.java&apos;" description="Copy compilation unit" destination="/src&lt;org.chengcai.day12List" element1="/src&lt;org.chengcai.day12List{Exception06.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1596250945058" units="1" version="1.0"/>
+</session>

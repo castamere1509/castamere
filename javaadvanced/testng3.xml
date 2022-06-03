@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="天猫项目">
+  <test name="购物">
+    <classes>
+      <class name="com.chengcai.day01.AnnotationDemo04Test"/>
+      <class name="com.chengcai.day01.AnnotationDemo06Test"/>
+      <class name="com.chengcai.day01.AnnotationDemo05Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

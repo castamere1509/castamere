@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Token登录页面">
+  <test name="Token登录">
+    <classes>
+      <class name="org.chengcai.day05.tokenlogin10Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

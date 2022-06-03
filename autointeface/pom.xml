@@ -1,0 +1,135 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>autointeface</groupId>
+  <artifactId>chengcai.com</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>chengcai.com</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>  <!-- *****配置项目依赖的jar包 ******* -->
+    <!-- 引入testng的jar包 -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>6.9.10</version>
+	</dependency> 
+	
+   <!-- 模拟客户端请求 -->
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.5.2</version>
+		</dependency>
+		
+		<!-- 操作excel文件 -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>4.0.1</version>
+		</dependency>
+		
+		<!-- 操作excel文件  -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>4.0.1</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.38</version>
+		</dependency>
+	
+	<!--依赖 maven-surefire插件进行 运行测试案例管理 -->
+	<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.12.4</version>
+    </dependency>
+    
+   <!--依赖 org.uncommons进行美化结果报告 -->
+   <dependency>   
+            <groupId>org.uncommons</groupId>
+            <artifactId>reportng</artifactId>
+            <version>1.1.4</version>
+            <exclusions>  
+                <exclusion>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                </exclusion>
+            </exclusions>
+    </dependency>
+        
+         <!--依赖 com.google.inject进行美化结果报告 -->
+           <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>3.0</version>
+        </dependency>
+        
+
+		
+	<!-- https://mvnrepository.com/artifact/ojdbc/ojdbc -->
+	<dependency>
+	    <groupId>ojdbc</groupId>
+	    <artifactId>ojdbc</artifactId>
+	    <version>14</version>
+	</dependency>  
+
+	<!-- 用来记录日志 -->
+	<dependency>
+	    <groupId>log4j</groupId>
+	    <artifactId>log4j</artifactId>
+	    <version>1.2.17</version>
+	</dependency>	
+        
+  </dependencies>
+  
+  <build>   <!--构建项目时进行的设置  -->
+   <plugins>   <!-- 给出构建过程中所用到的插件。 -->
+   
+    <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <!--此处maven-surefire-plugin表示构建和运行项目时需要用到该插件-->
+                <version>2.12.4</version>
+                <configuration> <!-- maven-surefire-plugin具体的配置 -->
+                 	    <suiteXmlFiles>  <!-- 该标签中声明 运行 哪些测试套件 -->
+	                        <suiteXmlFile>testng.xml</suiteXmlFile> 
+	                      	<suiteXmlFile>testng1.xml</suiteXmlFile>
+	                      	<suiteXmlFile>testng2.xml</suiteXmlFile>
+	                      	<suiteXmlFile>testng3.xml</suiteXmlFile>
+	                      	<suiteXmlFile>testng4.xml</suiteXmlFile>
+	                      	<suiteXmlFile>testng5.xml</suiteXmlFile>
+	                      	<suiteXmlFile>testng6.xml</suiteXmlFile>
+	                      	<suiteXmlFile>testng7.xml</suiteXmlFile>
+	                    </suiteXmlFiles>
+				       <properties>
+				  
+				       <property>
+                            <name>usedefaultlisteners</name>  <!--关闭默认的testng结果报告-->
+                            <value>false</value>
+                        </property>
+				       
+				        <!-- 使用reportng的结果报告，并且生成的格式为HTMLReporter和JUnitXMLReporter两种-->
+				        <property>
+				          <name>listener</name>
+				          <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter</value>
+				        </property>
+				        </properties> 
+                </configuration>
+          </plugin>
+   </plugins>
+   </build>
+  
+</project>

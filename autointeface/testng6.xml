@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="绑卡页面">
+  <test name="绑卡">
+    <classes>
+      <class name="org.chengcai.day05.TokenentryAccount01Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

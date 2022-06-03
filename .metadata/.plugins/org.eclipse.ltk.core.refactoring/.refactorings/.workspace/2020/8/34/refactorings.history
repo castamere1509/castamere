@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;chengcai.com&apos; to &apos;autointeface&apos;&#x0D;&#x0A;- Original element: &apos;chengcai.com&apos;&#x0D;&#x0A;- Renamed element: &apos;chengcai.com&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;chengcai.com&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=chengcai.com" name="autointeface" references="true" stamp="1597715164930" version="1.0"/>
+</session>

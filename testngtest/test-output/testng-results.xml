@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="896" started-at="2020-08-10T06:18:49Z" finished-at="2020-08-10T06:18:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="896" started-at="2020-08-10T06:18:49Z" finished-at="2020-08-10T06:18:50Z">
+      <class name="chengcai.testngtest.HomeWork02Test">
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test" duration-ms="363" started-at="2020-08-10T14:18:49Z" data-provider="datas" finished-at="2020-08-10T14:18:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userna71]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[注册成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test" duration-ms="105" started-at="2020-08-10T14:18:49Z" data-provider="datas" finished-at="2020-08-10T14:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userna81]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password8]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[注册成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test" duration-ms="119" started-at="2020-08-10T14:18:50Z" data-provider="datas" finished-at="2020-08-10T14:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userna91]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[注册成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test" duration-ms="108" started-at="2020-08-10T14:18:50Z" data-provider="datas" finished-at="2020-08-10T14:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userna11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[注册成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="test02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test02" duration-ms="47" started-at="2020-08-10T14:18:50Z" data-provider="datas1" finished-at="2020-08-10T14:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="test02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test02" duration-ms="42" started-at="2020-08-10T14:18:50Z" data-provider="datas1" finished-at="2020-08-10T14:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="test02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test02" duration-ms="41" started-at="2020-08-10T14:18:50Z" data-provider="datas1" finished-at="2020-08-10T14:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="test02(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:chengcai.testngtest.HomeWork02Test@2aaf7cc2]" name="test02" duration-ms="47" started-at="2020-08-10T14:18:50Z" data-provider="datas1" finished-at="2020-08-10T14:18:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[登录成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+      </class> <!-- chengcai.testngtest.HomeWork02Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

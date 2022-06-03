@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="注销页面">
+  <test name="注销">
+    <classes>
+      <class name="org.chengcai.day04.Delete02Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

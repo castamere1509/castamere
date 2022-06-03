@@ -1,0 +1,20 @@
+package com.chengcai.day01;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class DataProviderlianxi {
+	@DataProvider
+	public Object[][] zuoye(){
+		Object [][] rn={
+		{2020,"是闰年"},
+		{2019,"不是闰年"}
+	};
+		return rn;
+	}
+    @Test(dataProvider="zuoye")
+    public void rncx(int nd,String pd){
+    	System.out.println(nd+"----"+pd);
+    }
+	
+}
