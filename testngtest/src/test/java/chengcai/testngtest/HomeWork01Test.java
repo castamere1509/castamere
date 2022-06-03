@@ -16,6 +16,8 @@ public class HomeWork01Test {
 				{180,300,"输入数据异常，无法计算"}
 				{301,999999,"34dfdf"}
 				{301,9899999,"34dfdf"}
+				{301,999999,"one"}
+
 		};
 		return zl;
 	}
